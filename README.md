@@ -1,7 +1,7 @@
 <h2 align= "center"><em>NOT FAKE</em></h2>
 
 <div align="center">
-  <img height="400" src="https://github.com/shreyjain99/Facebook-Friend-Recommendation-Using-Graph-Mining/blob/main/src%20files/cover%20image.png"/>
+  <img height="400" src="https://github.com/shreyjain99/Not-Fake/blob/main/src%20files/coverimg.png"/>
 </div>
 
 <hr width="100%" size="2">
