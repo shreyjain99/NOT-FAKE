@@ -11,7 +11,7 @@
 <br>
 
 <p>
-<strong>Real World/Business Objective :</strong> Given a directed social graph, have to predict missing links to recommend users
+<strong>Real World/Business Objective :</strong> Given any Text based news/ news article predict if the news is real or fake.
 </p>
 
 <br>
@@ -20,32 +20,23 @@
 <strong>Constraints :</strong>
 </p>
 <ol>
-<li>Probability of prediction is useful to recommend ighest probability links</li>
-<li>No low-latency requirement.</li>
+<li>Probabilistic output</li>
+<li>Interpretability is very important</li>
+<li>No low-latency requirement</li>
 </ol>
 
 <br>
 
 <p>
-<strong>Get the data from :</strong> https://www.kaggle.com/c/FacebookRecruiting
-<br>The data is from facebook recruiting prediction competition hosted on kaggle.
+<strong>Get the data from :</strong> The data is gathered from various online open source websites.
 </p>
-
-<br>
-
-<p>
-<strong>Data Collection :</strong>
-<br>
-</p>
-<p>Taken data from facebook's recruting challenge on kaggle https://www.kaggle.com/c/FacebookRecruiting
-data contains two columns source and destination eac edge in graph - Data columns (total 2 columns): source_node int64 and destination_node int64 </p>
 
 <br>
 
 <p>
 <strong>ML Problem Formulation :</strong>
 </p>
-<p> <strong>Link Prediction in graph</strong> </p>
+<p> <strong>Fake news text prediction (Recurrent Neural Networks)</strong> </p>
 <p> 
 Generated training samples of good and bad links from given directed graph and for each link got some features like no of followers, is he followed back, page rank, katz score, adar index, some svd fetures of adj matrix, some weight features etc. and trained ml model based on these features to predict link.
 </p>
@@ -57,7 +48,7 @@ Generated training samples of good and bad links from given directed graph and f
 <strong>Performance metrics :</strong>
 </p>
 <ol>
-<li>Both precision and recall is important so F1 score is good choice </li>
+<li>Accuracy</li>
 <li>Confusion matrix</li>
 </ol>
 
@@ -114,8 +105,8 @@ Generated training samples of good and bad links from given directed graph and f
 
 <hr width="100%" size="2">
 
-<h2>Observations</h2>
+<h2>Future Scope</h2>
 
-<p>Understanding graph structures and feature engineering was crucial for this case study. The Random Forest model found <strong>"follows_back"</strong> as the most important feature, followed by <strong>"weight_f2"</strong> and <strong>"shortest_path."</strong> However, XGBoost delivered the best results, despite taking longer to train. In XGBoost, <strong>"follows_back"</strong> was also the top feature, followed by <strong>"cosine_follower"</strong> and <strong>"weight_f1."</strong> This highlights the importance of effective feature selection in graph-based machine learning tasks.</p>
+<p>  </p>
 
 <hr width="100%" size="2">
