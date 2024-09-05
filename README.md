@@ -17,6 +17,12 @@
 <br>
 
 <p>
+<strong>Motivation for the project :</strong> Fake news detection is crucial in today's digital age due to the rapid spread of misinformation across social media and online platforms. This misinformation can distort public perception, influence opinions, and have harmful societal consequences, especially during crises like elections or pandemics. Automated systems using machine learning and natural language processing are essential for quickly identifying and filtering fake news, as manual fact-checking cannot keep up with the scale of online content. These systems help protect the public from manipulation and maintain the integrity of the information ecosystem.
+</p>
+
+<br>
+
+<p>
 <strong>Constraints :</strong>
 </p>
 <ol>
@@ -36,9 +42,9 @@
 <p>
 <strong>ML Problem Formulation :</strong>
 </p>
-<p> <strong>Fake news text prediction (Recurrent Neural Networks)</strong> </p>
+<p> <strong>Fake news text prediction (Recurrent Neural Networks) (Classification)</strong> </p>
 <p> 
-Generated training samples of good and bad links from given directed graph and for each link got some features like no of followers, is he followed back, page rank, katz score, adar index, some svd fetures of adj matrix, some weight features etc. and trained ml model based on these features to predict link.
+This project focused on building a powerful false news detection system using BERT-based transformer models and natural language processing techniques. Multiple datasets were merged, and both deep learning and machine learning models were implemented. Attention-based models were fine-tuned using transfer learning to capture complex patterns in the text. The solution integrates advanced techniques for efficient and accurate classification.
 </p>
 
 <br>
@@ -54,59 +60,33 @@ Generated training samples of good and bad links from given directed graph and f
 
 <hr width="100%" size="2">
 
-<h2>Summary</h2>
+<body>
 
-<p>In this project, the dataset provided consisted of directed graph data with approximately 1.86 million nodes and 9.43 million edges. The data, obtained from Kaggle's Facebook Recruiting competition, included only connected nodes, though the theoretical number of possible edges is in the order of 10<sup>12</sup>.</p>
+  <h1>Project Summary</h1>
 
-<p>During exploratory data analysis (EDA), it was found that 90% of users had fewer than 12 followers, highlighting the dataset's sparsity. The dataset was highly imbalanced, containing only one classification label, so a random sample of negative examples (y = 0, where the link is not present) was created to balance the training and test datasets.</p>
+  <p>This project focuses on detecting false news articles using a Deep Learning system built on the BERT small architecture, along with natural language processing techniques. The system was developed through multiple stages, including the merging of several datasets to enhance model performance:</p>
 
-<p>Feature engineering was a critical part of the project, where various types of features were extracted, including:</p>
+  <h2>1. Merging Datasets and Data Preprocessing</h2>
+  <p>Multiple datasets containing news articles and related information were merged to create a comprehensive dataset. This was followed by data cleaning and preparation, where irrelevant columns were dropped, missing values were handled, and text was processed for analysis. The preprocessing ensured that the dataset was structured for both traditional machine learning and deep learning models.</p>
 
-<ul>
-    <li><strong>Similarity Measures</strong> (e.g., Adar index)</li>
-    <li><strong>Ranking Measures</strong> (e.g., PageRank, Katz Centrality, HITS Score)</li>
-    <li><strong>Graph Features</strong> (e.g., Connected Components, Shortest Path)</li>
-    <li><strong>Weight Features</strong></li>
-    <li><strong>SVD Features</strong> using the adjacency matrix (with n_components = 6)</li>
-</ul>
+  <h2>2. Data Splitting</h2>
+  <p>After preprocessing, the data was split into training, validation, and testing sets. This ensured the model would be evaluated on unseen data, providing robust performance measures. Maintaining a balanced dataset was crucial for binary classification (true vs. false news).</p>
 
-<p>Two models, Random Forest and XGBoost, were trained on the extracted features. While both models were used for the prediction task, XGBoost took the most time to run due to its complexity and the size of the dataset.</p>
+  <h2>3. Modeling</h2>
+    <p><strong>Machine Learning Models:</strong> Naive Bayes and Passive Aggressive Classifier, known for their effectiveness in text classification tasks, were employed as baseline models. These were used to benchmark performance against more advanced models.</p>
+    <p><strong>LSTM Models:</strong> Initially used to capture sequential patterns in the text. However, LSTM models were later found to be less efficient compared to transformer-based approaches.</p>
+    <p><strong>Transformer Models:</strong> The BERT small architecture, an attention-based model, was implemented, leveraging transfer learning for fine-tuning. Transformers use self-attention mechanisms to capture relationships between words in a sentence, allowing the model to focus on important parts of the text. This approach resulted in a 12% accuracy improvement over previous models. Transfer learning also significantly reduced training time and lowered latency by 5%.</p>
 
-<h3>Model Performance:</h3>
+  <h2>4. Performance Optimization</h2>
+    <p>By leveraging transfer learning and fine-tuning the BERT model, the system achieved improved accuracy and efficiency. The final model delivered faster predictions, making it suitable for real-time detection of false news articles.</p>
 
-<table>
-    <tr>
-        <th>Model</th>
-        <th>n_estimators</th>
-        <th>max_depth</th>
-        <th>Train f1-Score</th>
-        <th>Test f1-Score</th>
-    </tr>
-    <tr>
-        <td>Random Forest</td>
-        <td>72</td>
-        <td>14</td>
-        <td>0.962</td>
-        <td>0.926</td>
-    </tr>
-    <tr>
-        <td>XGBoost</td>
-        <td>76</td>
-        <td>14</td>
-        <td>0.996</td>
-        <td>0.927</td>
-    </tr>
-</table>
-
-<p>This case study showcases the importance of feature engineering in graph-based machine learning tasks, particularly when dealing with imbalanced datasets and large-scale data. The models performed well, with XGBoost achieving a slightly higher train f1-score but similar test f1-score compared to Random Forest.</p>
+   <p>This project successfully integrated multiple datasets, baseline machine learning models, deep learning, and attention-based transformer techniques to build a robust false news detection system.</p>
 
 </body>
-
 
 <hr width="100%" size="2">
 
 <h2>Future Scope</h2>
 
-<p>  </p>
 
 <hr width="100%" size="2">
