@@ -62,22 +62,22 @@ This project focused on building a powerful false news detection system using BE
 
 <body>
 
-  <h1>Project Summary</h1>
+  <h2>Project Summary</h2>
 
   <p>This project focuses on detecting false news articles using a Deep Learning system built on the BERT small architecture, along with natural language processing techniques. The system was developed through multiple stages, including the merging of several datasets to enhance model performance:</p>
 
-  <h2>1. Merging Datasets and Data Preprocessing</h2>
+  <h3>1. Merging Datasets and Data Preprocessing</h3>
   <p>Multiple datasets containing news articles and related information were merged to create a comprehensive dataset. This was followed by data cleaning and preparation, where irrelevant columns were dropped, missing values were handled, and text was processed for analysis. The preprocessing ensured that the dataset was structured for both traditional machine learning and deep learning models.</p>
 
-  <h2>2. Data Splitting</h2>
+  <h3>2. Data Splitting</h3>
   <p>After preprocessing, the data was split into training, validation, and testing sets. This ensured the model would be evaluated on unseen data, providing robust performance measures. Maintaining a balanced dataset was crucial for binary classification (true vs. false news).</p>
 
-  <h2>3. Modeling</h2>
+  <h3>3. Modeling</h3>
     <p><strong>Machine Learning Models:</strong> Naive Bayes and Passive Aggressive Classifier, known for their effectiveness in text classification tasks, were employed as baseline models. These were used to benchmark performance against more advanced models.</p>
     <p><strong>LSTM Models:</strong> Initially used to capture sequential patterns in the text. However, LSTM models were later found to be less efficient compared to transformer-based approaches.</p>
     <p><strong>Transformer Models:</strong> The BERT small architecture, an attention-based model, was implemented, leveraging transfer learning for fine-tuning. Transformers use self-attention mechanisms to capture relationships between words in a sentence, allowing the model to focus on important parts of the text. This approach resulted in a 12% accuracy improvement over previous models. Transfer learning also significantly reduced training time and lowered latency by 5%.</p>
 
-  <h2>4. Performance Optimization</h2>
+  <h3>4. Performance Optimization</h3>
     <p>By leveraging transfer learning and fine-tuning the BERT model, the system achieved improved accuracy and efficiency. The final model delivered faster predictions, making it suitable for real-time detection of false news articles.</p>
 
    <p>This project successfully integrated multiple datasets, baseline machine learning models, deep learning, and attention-based transformer techniques to build a robust false news detection system.</p>
