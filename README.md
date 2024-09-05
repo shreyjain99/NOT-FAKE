@@ -86,7 +86,12 @@ This project focused on building a powerful false news detection system using BE
 
 <hr width="100%" size="2">
 
-<h2>Future Scope</h2>
+<h2>Future Scope and Limitations</h2>
+<ol>
+<li>The datasets used in this project were very small due to lack of resources therefore huge datasets should be used.</li>
+<li>More complex and layers of encoders and decoders can be added to BERT model as well as different attention based models can also be used to make more robust system.</li>
+<li>Many different models and several web check and fact check systems can also be used along with machine learning and deep learning systems to tackle the problem.</li>
+</ol>
 
 
 <hr width="100%" size="2">
