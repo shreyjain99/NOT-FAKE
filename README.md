@@ -95,3 +95,25 @@ This project focused on building a powerful false news detection system using BE
 
 
 <hr width="100%" size="2">
+<br>
+
+<p>
+<strong>Skills and Software Tools Used in the Project :</strong>
+</p>
+<ul>
+    <li>Data Analysis</li>
+    <li>Natural Language Processing (NLP)</li>
+    <li>Text Preprocessing</li>
+    <li>Machine Learning Models</li>
+    <li>Deep Learning Models</li>
+    <li>Transformer Models (BERT)</li>
+    <li>Recurrent Neural Networks (RNNs)</li>
+    <li>Transfer Learning</li>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>Scikit-learn</li>
+    <li>TensorFlow/PyTorch</li>
+</ul>
+
+<hr width="100%" size="2">
